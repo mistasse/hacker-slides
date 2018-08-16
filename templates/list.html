@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>OrgSlides</title>
+
+        <link rel="stylesheet" href="/static/css/index.css">
+    </head>
+    <body>
+          <div id ="list">
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Action</th>
+              </tr>
+{% for file in files %}
+	      <tr>
+		<td><p>{{ file }}</p></td>
+		<td><a href="/edit/{{ file }}">Edit</a></td>
+	      </tr>
+{% endfor %}
+            </table>
+          </div>
+        </div>
+    </body>
+</html>

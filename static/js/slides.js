@@ -85,7 +85,7 @@ function highlightAnyCodeBlocks() {
 
 function insertMarkdownReference() {
     var markdownReference = $('<section/>', {
-        'data-markdown': "/slides.md",
+        'data-markdown': "/get/"+window.filename,
         'data-separator': "^---\n",
         'data-separator-vertical': "^--\n",
         'data-separator-notes': "^Note:",

@@ -35,7 +35,7 @@ $(function () {
     editor.getSession().setMode("ace/mode/markdown");
     editor.getSession().setUseWrapMode(true);
     editor.setShowPrintMargin(true);
-    $.get('/slides.md', function (data) {
+    $.get('/get/' + window.filename, function (data) {
         editor.setValue(data, -1);
     });
     var lastSRow = -1;
