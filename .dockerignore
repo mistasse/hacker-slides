@@ -1,6 +1,0 @@
-.git/
-.idea/
-*.swp
-Makefile
-Readme.md
-*.go
